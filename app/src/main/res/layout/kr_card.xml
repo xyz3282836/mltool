@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/kr_card_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/kr_card_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/kr_card_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/userAvatar"-->
+            <!--android:layout_width="@dimen/kr_card_avatar"-->
+            <!--android:layout_height="@dimen/kr_card_avatar"-->
+            <!--android:layout_weight="0" />-->
+
+            <ImageView
+                android:id="@+id/userAvatar"
+                android:layout_width="@dimen/kr_card_avatar"
+                android:layout_height="@dimen/kr_card_avatar"
+                android:layout_weight="0" />
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/kr_card_margin"
+                android:layout_weight="1"
+                android:textAppearance="@style/kr_card_user" />
+
+            <TextView
+                android:id="@+id/columnName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textAppearance="@style/kr_card_columnName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:textAppearance="@style/kr_card_title" />
+
+            <ImageView
+                android:id="@+id/featureImg"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_weight="0"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

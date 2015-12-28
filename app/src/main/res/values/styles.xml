@@ -1,20 +1,45 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppBase" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
+        <item name="colorPrimary">@color/pink300</item>
+        <item name="colorPrimaryDark">@color/pink800</item>
+        <item name="colorAccent">@color/pink300</item>
 
-    <style name="AppTheme.NoActionBar">
+        <!--默认就是白色-->
+        <!--<item name="android:actionMenuTextAppearance">@style/myCustomMenuTextApearance</item>-->
+
+    </style>
+    <style name="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.DrawerLayoutTheme" parent="AppTheme">
+    </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!--菜单字体颜色-->
+    <style name="myCustomMenuTextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+
+
+    <!--cardview-->
+    <style name="kr_card_user">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="kr_card_columnName">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="kr_card_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>
+
